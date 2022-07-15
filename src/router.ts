@@ -1,7 +1,6 @@
 import { Router } from "express";
+import { handlers } from "./handlers";
 
-export const router = Router().get("/", (_, res) => {
-  res.send({
-    message: "Hello world!",
-  });
-});
+export const router = Router()
+  // Index response
+  .get("/", handlers.homeHandler);
