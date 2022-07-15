@@ -1,5 +1,5 @@
 import { Express, json, urlencoded } from "express";
-import { info } from "./core/log";
+import { logger } from "./core/logger";
 import { config } from "./core/config";
 import { router } from "./router";
 
@@ -7,7 +7,11 @@ import { router } from "./router";
  * Handles when the app is listening to requests
  */
 export function handleAppListen(): void {
-  info(`Listening on *:${config.server.port}`);
+  /* logger.log({
+    message: `Listening on *:${config.server.port}`,
+    level: "info",
+  }); */
+  logger.info(`Listening on *:${config.server.port}`);
 }
 
 /**
