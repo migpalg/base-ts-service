@@ -1,7 +1,7 @@
 {
-  "name": "@alnago/properties-service",
-  "version": "0.0.0",
-  "description": "Properties service",
+  "name": "@alnago/base-service",
+  "version": "0.1.0",
+  "description": "Base service",
   "private": true,
   "scripts": {
     "dev": "nodemon --exec ts-node ./src/main.ts"
