@@ -24,6 +24,7 @@ export function startServer(app: Express): void {
   // Use application routes
   app.use(router);
 
+  // Fallback for not found routes
   app.use(notFound);
 
   // Handle all application errors
